@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color: darkblue;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    background-color: rebeccapurple;
+    margin-right: 10px;
+    align-items: center;
+
+}

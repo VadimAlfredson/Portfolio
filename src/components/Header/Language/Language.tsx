@@ -1,8 +1,9 @@
 import React from 'react';
+import s from '../Header.module.css'
 
 const Language = () => {
     return (
-        <div>
+        <div className={s.language}>
             Languages
         </div>
     );
