@@ -1,0 +1,23 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 200px;
+    width: 500px;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.allItemsContainer {
+    display: flex;
+    height: 100%;
+
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
