@@ -2,11 +2,15 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    height: 200px;
-    width: 500px;
+    height: 600px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -15,7 +19,7 @@
 .allItemsContainer {
     display: flex;
     height: 100%;
-
+    width: 100%;
     transition: translate;
     transition-property: transform;
     transition-duration: 300ms;

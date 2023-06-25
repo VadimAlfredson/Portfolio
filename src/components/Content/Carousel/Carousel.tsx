@@ -13,9 +13,10 @@ const Carousel: FC<any> = ({children}) => {
             Children.map(children, (child) => {
                 return cloneElement(child, {
                     style: {
+                        backgroundColor: 'blue',
                         height: '100%',
-                        minWidth: '500px',
-                        maxWidth: '500px',
+                        minWidth: '100%',
+                        maxWidth: '100%',
                     },
                 })
             })
@@ -24,7 +25,7 @@ const Carousel: FC<any> = ({children}) => {
 
     let handelLeftArrow = () => {
         setOffset((currentOffset: number) => {
-                const newOffset = currentOffset + 500
+                const newOffset = currentOffset + 100
                 console.log(newOffset)
                 return Math.min(newOffset, 0)
             }
@@ -32,7 +33,7 @@ const Carousel: FC<any> = ({children}) => {
     }
     let handelRightArrow = () => {
         setOffset((currentOffset: number) => {
-                const newOffset = currentOffset - 500
+                const newOffset = currentOffset - 100
                 console.log(newOffset)
                 return newOffset
             }
@@ -45,7 +46,7 @@ const Carousel: FC<any> = ({children}) => {
             <div className={s.window}>
                 <div className={s.allItemsContainer}
                      style={{
-                         transform: `translateX(${offset}px)`
+                         transform: `translateX(${offset}%)`
                      }}
                 >
                     {pages}
