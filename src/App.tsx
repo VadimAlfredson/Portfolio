@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import {Navigate, Route, Routes} from "react-router-dom";
 import Projects from "./components/Content/Projects/Projects";
-import AboutMe from "./components/Content/AboutMe/AboutMe";
+import Main from "./components/Content/Main/Main";
 import Contacts from "./components/Contacts/Contacts";
 import Header from "./components/Header/Header";
+
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
         <Routes>
             <Route path={"/Contacts"} element={<Contacts />}/>
             <Route path={"/Projects"} element={<Projects />}/>
-            <Route path={"/AboutMe"} element={<AboutMe />}/>
-            <Route path={"/*"} element={<Navigate to={'/AboutMe'}/>}/>
+            <Route path={"/Main"} element={<Main />}/>
+            <Route path={"/*"} element={<Navigate to={'/Main'}/>}/>
         </Routes>
         </div>
     </div>

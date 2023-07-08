@@ -4,6 +4,7 @@ import s from './Carousel.module.css'
 /*DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>*/
 
 const Carousel: FC<any> = ({children}) => {
+
     const [pages, setPages] = useState([])
     const [offset, setOffset] = useState<number>(0)
 
@@ -35,7 +36,7 @@ const Carousel: FC<any> = ({children}) => {
         setOffset((currentOffset: number) => {
                 const newOffset = currentOffset - 100
                 console.log(newOffset)
-                return newOffset
+                return Math.max(newOffset, -200)
             }
         )
     }

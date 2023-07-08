@@ -3,21 +3,33 @@
     flex-direction: row;
     height: 50px;
     width: 100%;
-    background-color: darkblue;
+    background-color: var(--background-color);
 }
 
 .navbar {
     display: flex;
     flex-grow: 1;
-    background-color: red;
     justify-content: center;
     align-items: center;
+    gap: 2em
 }
 
-.language {
+.theme {
     display: flex;
-    background-color: rebeccapurple;
     margin-right: 10px;
     align-items: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--button-text-color);
+}
 
+.theme img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.navLink {
+    text-decoration: none;
+    color: var(--button-text-color);
 }
