@@ -15,9 +15,9 @@ const Header = () => {
         }
     }
     return <div className={s.header}>
+        <Language />
         <NavBar/>
         <Theme handleThemeClick={handleThemeClick} theme={theme}/>
-        <Language />
     </div>
 };
 

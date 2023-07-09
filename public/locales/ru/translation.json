@@ -1,6 +1,11 @@
 {
+  "header": {
+  "main": "Главная",
+  "projects": "Проекты",
+  "contacts": "Контакты"
+},
   "main": {
-    "mame": "Вадим",
+    "name": "Вадим",
     "portfolio": "Портфолио",
     "stack": "Навыки",
     "about": "О себе"

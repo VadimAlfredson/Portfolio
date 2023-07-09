@@ -1,0 +1,13 @@
+{
+  "header": {
+  "main": "Main",
+  "projects": "Projects",
+  "contacts": "Contacts"
+},
+  "main": {
+    "name": "Vadim",
+    "portfolio": "Portfolio",
+    "stack": "Stack",
+    "about": "About"
+  }
+}
