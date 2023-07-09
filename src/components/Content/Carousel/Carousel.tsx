@@ -14,7 +14,6 @@ const Carousel: FC<any> = ({children}) => {
             Children.map(children, (child) => {
                 return cloneElement(child, {
                     style: {
-                        backgroundColor: 'blue',
                         height: '100%',
                         minWidth: '100%',
                         maxWidth: '100%',

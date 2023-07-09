@@ -13,7 +13,7 @@ const Project: React.FC<PropsType> = (props) => {
                      src={'https://images04.nicepage.com/feature/511177/ru/create-any-website-with-powerful-website-builder-konstruktor-saytov.jpg'}
                 /></div>
             <div className={s.information}>
-                <div className={s.title}>Название</div>
+                <div className={s.title}>{props.name}</div>
                 <div className={s.information}>
                     Описание проект
                 </div>

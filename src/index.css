@@ -22,7 +22,10 @@ html[data-theme='dark'] {
   transition: background-color 200ms linear;
 
   --background-color: #353535;
+  --secind-background-color: #353535;
   --icon-color: #ba8fc2;
+
+  --title-color: #ffaf00;
 }
 
 html[data-theme='light'] {
@@ -34,5 +37,8 @@ html[data-theme='light'] {
   transition: background-color 200ms linear;
 
   --background-color: #e6e6e6;
+  --secind-background-color: #e6e6e6;
   --icon-color: #4e005c;
+
+  --title-color: #410064;
 }
