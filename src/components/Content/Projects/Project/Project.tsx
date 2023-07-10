@@ -1,11 +1,13 @@
 import React from 'react';
 import s from './Project.module.css'
+import {useTranslation} from "react-i18next";
 
 type PropsType = {
     name: string
 }
 
 const Project: React.FC<PropsType> = (props) => {
+    const { t } = useTranslation()
     return (
         <div className={s.container}>
             <div className={s.photo}>
@@ -15,11 +17,11 @@ const Project: React.FC<PropsType> = (props) => {
             <div className={s.information}>
                 <div className={s.title}>{props.name}</div>
                 <div className={s.information}>
-                    Описание проект
+                    {t(`projects.${props.name}`)}
                 </div>
                 <div className={s.links}>
-                    <button>Test</button>
-                    <button>Code</button>
+                    <button>{t(`button.code`)}</button>
+                    <button>{t(`button.site`)}</button>
                 </div>
             </div>
         </div>
