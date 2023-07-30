@@ -17,5 +17,8 @@ i18n
         },
         interpolation: {
             escapeValue: false
-        }
+        },
+        backend: {
+            loadPath: '/Portfolio/locales/{{lng}}/{{ns}}.json',
+        },
     })
