@@ -1,0 +1,24 @@
+{
+  "header": {
+  "main": "Main",
+  "projects": "Projects",
+  "contacts": "Contacts"
+},
+  "main": {
+    "name": "Vadim Allayarov",
+    "portfolio": "Portfolio",
+    "stack": "Stack",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores commodi consequatur, debitis dignissimos doloribus dolorum facere fuga illum inventore labore minus natus nemo numquam obcaecati pariatur quod suscipit temporibus?"
+  },
+  "projects": {
+    "titleInfo": "Info",
+    "titleStack": "Tech stack",
+    "SocialNetwork": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores commodi consequatur, debitis dignissimos doloribus dolorum facere fuga illum inventore labore minus natus nemo numquam obcaecati pariatur quod suscipit temporibus?",
+    "YouTube": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores commodi consequatur, debitis dignissimos doloribus dolorum facere fuga illum inventore labore minus natus nemo numquam obcaecati pariatur quod suscipit temporibus?",
+    "Portfolio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores commodi consequatur, debitis dignissimos doloribus dolorum facere fuga illum inventore labore minus natus nemo numquam obcaecati pariatur quod suscipit temporibus?"
+  },
+  "button": {
+    "code": "Code",
+    "site": "Site"
+  }
+}
