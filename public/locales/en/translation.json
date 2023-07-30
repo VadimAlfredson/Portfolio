@@ -5,10 +5,10 @@
   "contacts": "Contacts"
 },
   "main": {
-    "name": "Vadim",
+    "name": "Vadim Allayarov",
     "portfolio": "Portfolio",
     "stack": "Stack",
-    "about": "About"
+    "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores commodi consequatur, debitis dignissimos doloribus dolorum facere fuga illum inventore labore minus natus nemo numquam obcaecati pariatur quod suscipit temporibus?"
   },
   "projects": {
     "titleInfo": "Info",

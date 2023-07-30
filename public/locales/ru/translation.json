@@ -5,10 +5,10 @@
   "contacts": "Контакты"
 },
   "main": {
-    "name": "Вадим",
+    "name": "Вадим Аллаяров",
     "portfolio": "Портфолио",
     "stack": "Навыки",
-    "about": "О себе"
+    "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores commodi consequatur, debitis dignissimos doloribus dolorum facere fuga illum inventore labore minus natus nemo numquam obcaecati pariatur quod suscipit temporibus?"
   },
   "projects": {
     "titleInfo": "Описание",

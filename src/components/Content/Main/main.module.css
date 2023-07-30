@@ -1,0 +1,7 @@
+.name {
+    font-size: 30px;
+    display: inline-block;
+    background: linear-gradient(45deg, indianred, goldenrod);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
