@@ -42,7 +42,10 @@ const Carousel: FC<any> = ({children}) => {
 
     return (
         <div className={s.mainContainer}>
-            <button className={s.arrow} onClick={handelLeftArrow}>left</button>
+            <button className={s.arrow} onClick={handelLeftArrow}>
+                <div className={s.arrowTopLeft}></div>
+                <div className={s.arrowBottomLeft}></div>
+            </button>
             <div className={s.window}>
                 <div className={s.allItemsContainer}
                      style={{
@@ -52,7 +55,10 @@ const Carousel: FC<any> = ({children}) => {
                     {pages}
                 </div>
             </div>
-            <button className={s.arrow} onClick={handelRightArrow}>right</button>
+            <button className={s.arrow} onClick={handelRightArrow}>
+                <div className={s.arrowTopRight}></div>
+                <div className={s.arrowBottomRight}></div>
+            </button>
         </div>
     );
 };

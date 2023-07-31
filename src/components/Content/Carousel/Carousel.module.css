@@ -25,3 +25,73 @@
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
+
+.arrow {
+    cursor: pointer;
+    height: 120px;
+    width: 40px;
+    position: relative;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    border: none;
+}
+.arrow:hover {
+    animation: arrow 1s linear infinite;
+}
+
+.arrowTopRight,
+.arrowBottomRight {
+    height: 10px;
+    left: -30px;
+    position: absolute;
+    top: 60px;
+    width: 50px;
+    border-radius: 2px 5px 5px 2px;
+    background: var(--arrow-color);
+}
+.arrowTopRight {
+    top: 64px;
+}
+.arrowTopRight {
+    transform: rotate(60deg);
+    transform-origin: bottom right;
+}
+.arrowBottomRight {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.arrowTopLeft,
+.arrowBottomLeft {
+    height: 10px;
+    right: -30px;
+    position: absolute;
+    top: 60px;
+    width: 50px;
+    border-radius: 5px 2px 2px 5px;
+    background: var(--arrow-color)
+}
+.arrowTopLeft {
+    top: 64px;
+}
+.arrowTopLeft {
+    transform: rotate(-60deg);
+    transform-origin: bottom left;
+}
+.arrowBottomLeft {
+    transform: rotate(60deg);
+    transform-origin: top left;
+}
+
+@keyframes arrow {
+    0% {
+        left:0;
+    }
+    50% {
+        left:5px;
+    }
+    100% {
+        left:0;
+    }
+}

@@ -26,6 +26,8 @@ html[data-theme='dark'] {
   --icon-color: #ba8fc2;
 
   --title-color: #ffaf00;
+
+  --arrow-color: #0fb9b9;
 }
 
 html[data-theme='light'] {
@@ -41,4 +43,6 @@ html[data-theme='light'] {
   --icon-color: #4e005c;
 
   --title-color: #410064;
+
+  --arrow-color: #4e005c;
 }
