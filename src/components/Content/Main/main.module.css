@@ -1,7 +1,21 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5%;
+    justify-content: center;
+}
+
 .name {
     font-size: 30px;
     display: inline-block;
-    background: linear-gradient(45deg, indianred, goldenrod);
+    background: var(--arrow-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.photo {
+    width: 50%;
+    height: 400px;
+    background-color: var(--button-text-color);
 }
