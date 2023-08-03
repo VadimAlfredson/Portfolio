@@ -7,9 +7,15 @@ const NavBar = () => {
     const { t } = useTranslation()
     return (
         <div className={s.navbar}>
-            <NavLink className={s.navLink} to={'/Main'}>{t("header.main")}</NavLink>
-            <NavLink className={s.navLink} to={'/Projects'}>{t("header.projects")}</NavLink>
-            <NavLink className={s.navLink} to={'/Contacts'}>{t("header.contacts")}</NavLink>
+            <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/Main'}>
+                <p>{t("header.main")}</p>
+            </NavLink>
+            <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/Projects'}>
+                <p>{t("header.projects")}</p>
+            </NavLink>
+            <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/Contacts'}>
+                <p>{t("header.contacts")}</p>
+            </NavLink>
         </div>
     );
 };

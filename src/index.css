@@ -25,6 +25,9 @@ html[data-theme='dark'] {
   --secind-background-color: #353535;
   --icon-color: #ba8fc2;
 
+  --nav-color: rgba(15, 185, 185, 0.3);
+  --shadow-color: rgba(15, 185, 185, 0.5);
+
   --title-color: #ffaf00;
 
   --arrow-color: #0fb9b9;
@@ -45,4 +48,7 @@ html[data-theme='light'] {
   --title-color: #410064;
 
   --arrow-color: #4e005c;
+
+  --nav-color: rgba(65, 0, 100, 0.3);
+  --shadow-color: rgba(65, 0, 100, 0.5);
 }
