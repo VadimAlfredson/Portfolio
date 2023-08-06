@@ -20,8 +20,9 @@ const Project: React.FC<PropsType> = (props) => {
                     {t(`projects.${props.name}`)}
                 </div>
                 <div className={s.links}>
-                    <button>{t(`button.code`)}</button>
-                    <button>{t(`button.site`)}</button>
+                    <a className={s.aStyle} href={''}><span className={s.spanStyle}>Click test</span></a>
+                    <button className={s.link}>{t(`button.code`)}</button>
+                    <button className={s.link}>{t(`button.site`)}</button>
                 </div>
             </div>
         </div>

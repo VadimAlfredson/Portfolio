@@ -10,7 +10,8 @@
 .photo {
     width: 500px;
 }
-.photo img{
+
+.photo img {
     width: 500px;
 }
 
@@ -20,6 +21,7 @@
 }
 
 .title {
+    margin: 20px;
     color: var(--title-color);
 }
 
@@ -28,6 +30,55 @@
 }
 
 .links {
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.link {
+    width: 100px;
+    padding: 10px 25px;
+}
+
+.aStyle {
+    position: relative;
+    text-decoration: none;
+    color: var(--button-text-color);
+    background: linear-gradient(45deg, var(--main-color), var(--background-color), var(--second-color));
+    padding: 14px 25px;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+.spanStyle {
+    position: relative;
+    z-index: 1;
+}
+
+.aStyle::before {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: var(--secind-background-color);
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+.aStyle:hover::before {
+    opacity: 0.7;
+}
+
+.aStyle::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, var(--main-color), var(--background-color), var(--second-color));
+    border-radius: 9px;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(20px);
+}
+.aStyle:hover::after {
+    opacity: 1;
 }
