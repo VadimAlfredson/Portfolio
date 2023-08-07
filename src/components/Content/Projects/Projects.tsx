@@ -7,10 +7,10 @@ const Projects: FC = () => {
     const {ref, inView} = useInView({
         threshold: 0.1
     })
-    let projects: Array<string> = ['SocialNetwork', "YouTube", "Portfolio"]
+    let projects: Array<{ name: string, site: string }> = [{name: 'Social Network', site: 'SocialNetwork'}, {name: "YouTube Clone", site: 'YouTubeClone'}, {name: "Portfolio", site: "Portfolio"}]
     return <div>
         <Carousel>
-            {projects.map(i => <div ref={ref} className={s.item}><Project name={i} /></div> )}
+            {projects.map(i => <div ref={ref} className={s.item}><Project item={i} /></div> )}
         </Carousel>
     </ div>
 }

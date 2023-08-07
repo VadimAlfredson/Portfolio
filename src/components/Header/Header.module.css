@@ -33,14 +33,19 @@
     color: var(--button-text-color);
 }
 
+.navLink:hover {
+    text-decoration: none;
+    color: var(--button-text-color);
+    text-shadow: 0 0 20px var(--main-color);
+}
+
 .navActive {
     display: flex;
     text-decoration: none;
     align-items: center;
     color: var(--button-text-color);
-    box-shadow: 0 0 6px var(--shadow-color);
-    background-color: var(--nav-color);
     height: 100%;
+    text-shadow: 0 0 20px var(--second-color);
     /*background-color: var(--main-color);*/
 }
 

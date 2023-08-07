@@ -16,7 +16,7 @@ const Carousel: FC<any> = ({children}) => {
                     style: {
                         height: '100%',
                         minWidth: '100%',
-                        maxWidth: '100%',
+                        maxWidth: '100vw',
                     },
                 })
             })
@@ -42,7 +42,7 @@ const Carousel: FC<any> = ({children}) => {
 
     return (
         <div className={s.mainContainer}>
-            <button className={s.arrow} onClick={handelLeftArrow}>
+            <button className={s.arrowLeft} onClick={handelLeftArrow}>
                 <div className={s.arrowTopLeft}></div>
                 <div className={s.arrowBottomLeft}></div>
             </button>
@@ -55,7 +55,7 @@ const Carousel: FC<any> = ({children}) => {
                     {pages}
                 </div>
             </div>
-            <button className={s.arrow} onClick={handelRightArrow}>
+            <button className={s.arrowRight} onClick={handelRightArrow}>
                 <div className={s.arrowTopRight}></div>
                 <div className={s.arrowBottomRight}></div>
             </button>

@@ -1,12 +1,12 @@
 .container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
     background-color: var(--secind-background-color);
-    padding: 5%;
     border-radius: 25px;
+    max-width: 1000px;
 }
 
+/*
 .photo {
     width: 500px;
 }
@@ -14,15 +14,30 @@
 .photo img {
     width: 500px;
 }
+*/
 
 .information {
     display: flex;
+    width: auto;
     flex-direction: column;
+    align-items: center;
+    margin: 50px;
 }
 
 .title {
-    margin: 20px;
-    color: var(--title-color);
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 6em;
+    max-width: 50vw;
+    display: inline-block;
+    background: linear-gradient(45deg, var(--second-color), var(--main-color), var(--second-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #0003);
+    font-weight: bold;
+    line-height: 0.8em;
+    outline: none;
+
 }
 
 .description {
@@ -33,7 +48,7 @@
     margin-top: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    column-gap: 5%;
 }
 
 .link {
@@ -42,13 +57,21 @@
 }
 
 .aStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     text-decoration: none;
     color: var(--button-text-color);
-    background: linear-gradient(45deg, var(--main-color), var(--background-color), var(--second-color));
+    background: linear-gradient(45deg, var(--main-color), var(--second-color));
     padding: 14px 25px;
+    width: 80px;
     font-size: 1.25em;
     border-radius: 10px;
+}
+
+.aStyle:hover {
+    color: whitesmoke;
 }
 
 .spanStyle {
@@ -73,7 +96,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, var(--main-color), var(--background-color), var(--second-color));
+    background: linear-gradient(45deg, var(--main-color), var(--second-color));
     border-radius: 9px;
     transition: 0.5s;
     opacity: 0;

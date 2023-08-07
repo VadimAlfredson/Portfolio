@@ -10,6 +10,7 @@
     max-width: 900px;
     align-items: center;
     justify-content: center;
+    margin: auto;
     color: var(--button-text-color);
     transition: background-color 200ms linear;
 }
