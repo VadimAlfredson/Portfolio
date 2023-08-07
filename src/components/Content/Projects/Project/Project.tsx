@@ -16,7 +16,7 @@ const Project: React.FC<PropsType> = (props) => {
                 /></div>*/}
             <div className={s.information}>
                 <div className={s.title}>{props.item.name}</div>
-                <div className={s.information}>
+                <div className={s.description}>
                     {t(`projects.${props.item.site}`)}
                 </div>
                 <div className={s.links}>

@@ -22,11 +22,28 @@
     color: var(--button-text-color);
 }
 
-.theme img {
-    height: 20px;
-    width: 20px;
+.iconTheme {
+    height: 32px;
+    width: 32px;
+    background-color: var(--button-text-color);
+    -webkit-mask-image: url('../../../public/icons/dark-mode.png');
+    mask-image: url('../../../public/icons/dark-mode.png');
 }
-
+.iconLanguage {
+    height: 32px;
+    width: 32px;
+    background-color: var(--button-text-color);
+    -webkit-mask-image: url('../../../public/icons/language.png');
+    mask-image: url('../../../public/icons/language.png');
+}
+.iconTheme:hover,
+.iconLanguage:hover {
+    background-color: var(--second-color);
+}
+.iconTheme:hover,
+.iconLanguage:active {
+    background-color: var(--main-color);
+}
 
 .navLink {
     text-decoration: none;
@@ -43,9 +60,10 @@
     display: flex;
     text-decoration: none;
     align-items: center;
-    color: var(--button-text-color);
+    color: var(--main-color);
+    font-weight: bold;
     height: 100%;
-    text-shadow: 0 0 20px var(--second-color);
+    /*text-shadow: 0 0 5px var(--main-color);*/
     /*background-color: var(--main-color);*/
 }
 

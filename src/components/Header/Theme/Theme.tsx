@@ -10,7 +10,9 @@ let handleSelectThemeClick = () => {
    props.theme == 'dark' ? props.handleThemeClick('light') : props.handleThemeClick('dark')
 }
     return (
-        <button onClick={handleSelectThemeClick} className={s.theme}><img alt={'theme'} src={process.env.PUBLIC_URL + props.theme === 'dark' ? '/eclipse.png' : '/eclipseLight.png'}/></button>
+        <button onClick={handleSelectThemeClick} className={s.theme}>
+            <div className={s.iconTheme}></div>
+        </button>
     );
 };
 

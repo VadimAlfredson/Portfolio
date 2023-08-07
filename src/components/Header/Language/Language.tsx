@@ -16,7 +16,7 @@ const Language = () => {
         <button
             onClick={() => onLanguageChange(languageValue == "ru" ? "en" : "ru")}
             className={s.theme}>
-            {languageValue == "ru" ? "RU" : "EN"}
+            <div className={s.iconLanguage}></div>
         </button>
     );
 };
