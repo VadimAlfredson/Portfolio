@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    background-color: var(--secind-background-color);
+}
+
+.title {
+
+}
+
+.textAboutMe {
+
+}

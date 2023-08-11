@@ -7,7 +7,7 @@ const Main: FC = () => {
     const { t } = useTranslation();
     return <div className={s.main}>
         <div className={s.photo}>картинка</div>
-        <div><h1 className={s.name}>{t("main.name")}</h1>
+        <div><h1 className={s.name}>{t("main.title")}</h1>
     <p className={s.about}>{t("main.about")}</p>
         </ div>
         </ div>

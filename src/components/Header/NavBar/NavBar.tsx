@@ -10,9 +10,15 @@ const NavBar = () => {
             <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/Main'}>
                 <p>{t("header.main")}</p>
             </NavLink>
+            <div className={s.divider}></div>
+            <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/aboutMe'}>
+                <p>{t("header.about")}</p>
+            </NavLink>
+            <div className={s.divider}></div>
             <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/Projects'}>
                 <p>{t("header.projects")}</p>
             </NavLink>
+            <div className={s.divider}></div>
             <NavLink className={style => style.isActive ? s.navActive : s.navLink} to={'/Contacts'}>
                 <p>{t("header.contacts")}</p>
             </NavLink>
