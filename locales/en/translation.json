@@ -1,10 +1,12 @@
 {
   "header": {
-  "main": "Main",
-  "projects": "Projects",
-  "contacts": "Contacts"
-},
+    "main": "Main",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "about": "About me"
+  },
   "main": {
+    "title": "Hi! I'm Vadim",
     "name": "Vadim Allayarov",
     "portfolio": "Portfolio",
     "stack": "Stack",
